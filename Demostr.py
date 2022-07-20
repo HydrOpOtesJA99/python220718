@@ -30,6 +30,6 @@ print(result)
 
 result = result.replace("spam", "span egg")
 print(result)
-lst = result.split()
+lst = result.split() # split은 list로 바꾸고
 print(lst)
-print(":)".join(lst))
+print(":)".join(lst)) # 전체를 str로 바꾼다
