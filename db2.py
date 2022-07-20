@@ -2,8 +2,8 @@
 
 import sqlite3
 
-# 연결객체 리턴(일단 임시로 메모리에서 작업)
-con = sqlite3.connect(":memory:")
+# 연결객체 리턴(데이터 베이스 파일에 저장)
+con = sqlite3.connect("test.db")
 # 커서 객체(SQL 구문을 실행하는 객체)
 cur = con.cursor()
 # 테이블 생성
@@ -25,3 +25,5 @@ cur.executemany("insert into PhoneBook values(?, ?);", datalist)
 cur.execute("select * from PhoneBook;")
 for row in cur:
     print(row)
+
+# 
