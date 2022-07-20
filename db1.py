@@ -7,7 +7,7 @@ con = sqlite3.connection(":memory:")
 # 커서 객체(SQL 구문을 실행하는 객체)
 cur = con.cursor()
 # 테이블 생성
-cur-execute("create table PhoneBook(Name text, PhoneNum text);")
+cur.execute("create table PhoneBook(Name text, PhoneNum text);")
 # 1건 입력
 cur.execute("insert into PhoneBook values('derick, '010-111');")
 
