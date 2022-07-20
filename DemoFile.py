@@ -33,7 +33,13 @@ print("{0:.2f}".format(4/3))
 url = "http://www.credu.com/?page=" + str(1)
 print(url)
 
-# 파일을 생성
+# 파일을 생성 -> denmo.txt 파일이 work 폴더에 생성된 걸 확인가능
 f = open("denmo.txt", "wt")
 f.write("첫번쨰\n두번쨰\n세번째\n")
+f.close()
+
+# 파일을 읽어서 처리 -> 터미널에 denmo.txt 파일을 읽어들인다.
+f = open("denmo.txt", "rt")
+result = f.read()
+print(result)
 f.close()
