@@ -8,8 +8,8 @@ import re
 hdr = {'User-agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.23 (KHTML, like Gecko) Version/10.0 Mobile/14E5239e Safari/602.1'}
 
 for n in range(0,10):
-        #클리앙의 중고장터 주소 
-        data ='https://www.clien.net/service/board/sold?&od=T31&po=' + str(n)
+        # 오늘의 유머
+        data ='http://www.todayhumor.co.kr/board/list.php?kind=total&table=total&page=' + str(n)
         print(data) # 주소확인
         #웹브라우져 헤더 추가 
         req = urllib.request.Request(data, \
