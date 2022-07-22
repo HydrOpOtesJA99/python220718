@@ -14,7 +14,7 @@ class Form(QMainWindow):
         #창의 시작위치와 폭, 높이(x,y,width,height) 
         self.setGeometry(200, 200, 800, 800)
         
-        #입력 텍스트 
+        #입력 텍스트
         self.lineEdit = QLineEdit("", self)
         self.lineEdit.move(20, 20)
 
